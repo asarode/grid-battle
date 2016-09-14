@@ -3,11 +3,11 @@ import createLogger from 'redux-logger'
 import createSagaMiddleware from 'redux-saga'
 import { rootSaga } from 'modules/effects'
 import field from './field.reducer'
-import players from './players.reducer'
+import player from './player.reducer'
 
 export const rootReducer = combineReducers({
   field,
-  players
+  player
 })
 
 const sagaMiddleware = createSagaMiddleware()
